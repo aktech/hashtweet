@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce
+class ComposerStaticInit22ecc4ff255a5ed5eff53bf962c04a67
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
@@ -33,7 +33,7 @@ class ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce
     public static $prefixDirsPsr4 = array (
         'Slim\\Views\\' => 
         array (
-            0 => __DIR__ . '/..' . '/slim/views',
+            0 => __DIR__ . '/..' . '/slim/twig-view/src',
         ),
         'Slim\\' => 
         array (
@@ -73,9 +73,9 @@ class ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0f8e4d9a0095cc2658e799fdd3a221ce::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit22ecc4ff255a5ed5eff53bf962c04a67::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit22ecc4ff255a5ed5eff53bf962c04a67::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit22ecc4ff255a5ed5eff53bf962c04a67::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

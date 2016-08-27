@@ -23,10 +23,9 @@ $container['view'] = function ($c) {
 };
 
 // Define named route
-$app->get('/hello/{name}', function ($request, $response, $args) {
+$app->get('/', function ($request, $response, $args) {
  	$tweets = findtweets();   
 	return $this->view->render($response, 'index.html', [
-	    'name' => $args['name'],
 	    'tweets' => $tweets
     ]);
 })->setName('home');

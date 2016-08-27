@@ -1,2 +1,65 @@
-Hello Amit!!! </br>
-inside templates {{ name }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HashTweet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Patua+One" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">	
+</head>
+ <body>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="pull-left"><a>
+        <li class=""><a href="#">HashTweet</a></li>
+        <li class="social pull-right"><a 
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+<ul>
+    {% for tweet in tweets %}
+        <li class="list-group-item">
+	<div>
+	  <img class="card-img-top" src="{{ tweet.user.profile_image_url }}" alt="Card image cap">
+	  <div class="card-block">
+	    <h4 class="card-title author-name"> {{ tweet.user.name }} </h4>
+	    <p class="card-text author-tweet">{{ tweet.text }}</p>
+	    <a  href="https://twitter.com/tweet/status/{{ tweet.id }}" target="_blank" class="btn btn-primary">ReTweet!</a>
+	  </div>
+	</div>	
+	</li>
+    {% endfor %}
+</ul>
+   </div>
+
+<div class="container footer">
+  <div class="row">
+  <hr>
+    <div class="col-lg-12">
+      <div class="col-md-8">
+        <a href="#">HashTweet by Amit Kumar</a> | <a href="#"> Made in India</a>    
+      </div>
+      <div class="col-md-4">
+        <p class="muted pull-right"> © Copyright. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

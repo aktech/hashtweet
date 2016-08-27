@@ -2,12 +2,12 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-require 'vendor/autoload.php';
-
 ini_set('display_errors', 1);
 
-$app = new \Slim\App;
+require 'vendor/autoload.php';
+require 'includes/gettweets.php';
 
+$app = new \Slim\App;
 // Fetch DI Container
 $container = $app->getContainer();
 
@@ -24,11 +24,12 @@ $container['view'] = function ($c) {
 
 // Define named route
 $app->get('/hello/{name}', function ($request, $response, $args) {
-    return $this->view->render($response, 'index.html', [
-        'name' => $args['name']
+ 	$tweets = findtweets();   
+	return $this->view->render($response, 'index.html', [
+	    'name' => $args['name'],
+	    'tweets' => $tweets
     ]);
 })->setName('home');
-
 
 $app->run();
 

@@ -1,0 +1,23 @@
+ 
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    font-size: 35px;
+    font-family: 'Baloo Thambi', cursive, 'Droid Sans', 'Noto Sans', 'Bree Serif';
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.author-name {
+  font-family: "Bree Serif";
+}
+
+.author-tweet {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.footer {
+   font-family: 'Noto Sans';
+}

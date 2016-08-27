@@ -27,15 +27,7 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
     return $this->view->render($response, 'index.html', [
         'name' => $args['name']
     ]);
-})->setName('profile');
-
-
-$app->get('/', function (Request $request, Response $response) {
-    $name = "Amit!";
-    $response->getBody()->write("Hello, $name");
-
-    return $response;
-});
+})->setName('home');
 
 
 $app->run();

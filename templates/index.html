@@ -14,21 +14,18 @@
 </head>
  <body>
 
+<!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="pull-left"><a>
         <li class=""><a href="#">HashTweet</a></li>
-        <li class="social pull-right"><a 
-      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<!-- Navigation -->
 
+<!-- Tweets -->
 <div class="container">
 <ul>
     {% for tweet in tweets %}
@@ -47,7 +44,9 @@
     {% endfor %}
 </ul>
    </div>
+<!-- Tweets -->
 
+<!-- footer -->
 <div class="container footer">
   <div class="row">
   <hr>
@@ -61,6 +60,7 @@
     </div>
   </div>
 </div>
+<!-- footer -->
 
 </body>
 </html>

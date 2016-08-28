@@ -7,7 +7,14 @@ ini_set('display_errors', 1);
 require 'vendor/autoload.php';
 require 'includes/gettweets.php';
 
-$app = new \Slim\App;
+$configuration = [
+    'settings' => [
+        'displayErrorDetails' => true,
+    ],
+];
+$c = new \Slim\Container($configuration);
+$app = new \Slim\App($c);
+
 // Fetch DI Container
 $container = $app->getContainer();
 

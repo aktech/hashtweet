@@ -22,3 +22,5 @@
    font-family: 'Noto Sans';
 }
 
+li:nth-child(even) { background: aliceblue; }
+li:nth-child(odd) { background: snow; }

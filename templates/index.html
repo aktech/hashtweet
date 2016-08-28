@@ -34,7 +34,9 @@
     {% for tweet in tweets %}
         <li class="list-group-item">
 	<div>
+	<a href='http://twitter.com/{{ tweet.user.screen_name }}'>
 	  <img class="card-img-top" src="{{ tweet.user.profile_image_url }}" alt="Card image cap">
+	  </a>
 	  <div class="card-block">
 	    <h4 class="card-title author-name"> {{ tweet.user.name }} </h4>
 	    <p class="card-text author-tweet">{{ tweet.text }}</p>

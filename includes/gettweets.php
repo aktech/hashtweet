@@ -4,10 +4,10 @@ require "vendor/autoload.php";
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-define('CONSUMER_KEY', 'sd5K9XKB5gu8dwyNPWYBEnues');
-define('CONSUMER_SECRET', 'VjZ5MZnA42L5JFoVysmn1W9AJ1bEadR6Gq79Ou6Z8qcWSI9hJH');
-define('ACCESS_TOKEN', '2254569260-4Jw5I7Ywc61eY5O900AkaWRhqOP8aZqZ5ciu91q');
-define('ACCESS_TOKEN_SECRET', 'wE0a6tU8Xlen06KErmyu6NUWvg2tzNmVoKNZAqKt2j8jM');
+define('CONSUMER_KEY', 'YOUR_CONSUMER_KEY');
+define('CONSUMER_SECRET', 'YOUR_CONSUMER_SECRET');
+define('ACCESS_TOKEN', 'YOUR_ACCESS_TOKEN');
+define('ACCESS_TOKEN_SECRET', 'YOUR_ACCESS_TOKEN_SECRET');
 define('HASHTAG', '#custserv');
 
 
